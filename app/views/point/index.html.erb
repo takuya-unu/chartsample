@@ -1,0 +1,13 @@
+<h1 class="display-4 text-primary">Point#index</h1>
+<p><%= @data %></p>
+<table class="table">
+<tr>
+<th>x</th><th>y</th>
+</tr>
+<% @data.each do |obj| %>
+    <tr>
+    <td><%= obj.x %></td>
+    <td><%= obj.y %></td>
+    </tr>
+<% end %>
+</table>
